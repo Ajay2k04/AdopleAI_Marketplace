@@ -195,7 +195,7 @@ function FeatureAndVideo({ theme }: { theme: "dark" | "light" }) {
         )}
       >
         <img
-          src="/ai-platform-interface-blue-gradient.png"
+          src="/image3.png"
           alt="SEC Analysis screenshot"
           className="w-full h-auto rounded-lg"
         />

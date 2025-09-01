@@ -186,7 +186,7 @@ function FeatureAndVideo({ theme }: { theme: "dark" | "light" }) {
         )}
       >
         <img
-          src="/web-builder-interface-purple-gradient.png"
+          src="/image1.png"
           alt="AI Voice Assistants screenshot"
           className="w-full h-auto rounded-lg"
         />

@@ -190,7 +190,7 @@ export default function AppSumoHomepage() {
               <CardHeader className="p-0">
                 <Link href="/products/jodian" className="block">
                   <img
-                    src="/image4.png"
+                    src="/image7.png"
                     alt="Jodian"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
@@ -231,7 +231,7 @@ export default function AppSumoHomepage() {
               <CardHeader className="p-0">
                 <Link href="/products/restreamer" className="block">
                   <img
-                    src="/streaming-software-interface-dark-purple.png"
+                    src="/image10.png"
                     alt="Restreamer"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
@@ -315,7 +315,7 @@ export default function AppSumoHomepage() {
       {/* Guarantees Section */}
       <section className={`px-4 py-12 ${themeClasses.sectionBg}`}>
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
+          {/* <div className="grid md:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center">
               <Shield className="w-12 h-12 text-green-400 mb-4" />
               <h3 className="text-xl font-semibold mb-2">Handpicked, high-quality deals</h3>
@@ -331,14 +331,14 @@ export default function AppSumoHomepage() {
               <h3 className="text-xl font-semibold mb-2">We Got Your Back guarantee</h3>
               <p className={themeClasses.textSecondary}>Purchase protection on all Select tools. Learn more.</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
       {/* Entrepreneur Quote */}
       <section className="px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl font-bold mb-4">adople-lings</h2>
+          {/* <h2 className="text-2xl font-bold mb-4">adople-lings</h2> */}
           <blockquote className={`text-xl italic ${themeClasses.textSecondary}`}>
             "Adople AI offers deals on high-tech business agent that can make your life much easier"
           </blockquote>
@@ -443,7 +443,7 @@ export default function AppSumoHomepage() {
       </section>*/}
 
       {/* Stories Section */}
-      <section className="px-4 py-16">
+      {/* <section className="px-4 py-16">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">Stories you'll love</h2>
           <p className={`text-center ${themeClasses.textSecondary} mb-12`}>
@@ -484,7 +484,7 @@ export default function AppSumoHomepage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Bottom Newsletter */}
       <section className={`px-4 py-12 ${themeClasses.sectionBg}`}>

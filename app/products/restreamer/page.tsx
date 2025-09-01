@@ -114,7 +114,7 @@ function Hero({ theme }: { theme: "dark" | "light" }) {
         <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/eNJWFdc9iLY?si=vqjRnDBiDHCI3Jw6"
             title="Resume Analyzer overview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -195,7 +195,7 @@ function FeatureAndVideo({ theme }: { theme: "dark" | "light" }) {
         )}
       >
         <img
-          src="/streaming-software-interface-dark-purple.png"
+          src="/image9.png"
           alt="Resume Analyzer screenshot"
           className="w-full h-auto rounded-lg"
         />
