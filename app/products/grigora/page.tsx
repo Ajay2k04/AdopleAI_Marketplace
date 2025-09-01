@@ -195,6 +195,7 @@ function FeatureAndVideo({ theme }: { theme: "dark" | "light" }) {
   )
 }
 
+
 function PricingComparison({ theme }: { theme: "dark" | "light" }) {
   const router = useRouter()
   const tiers = [

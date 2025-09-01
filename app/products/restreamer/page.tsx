@@ -27,12 +27,15 @@ export default function ResumeAnalyzerPage() {
   }, [])
 
   return (
-    <main className={cn("min-h-screen", theme === "dark" ? "bg-[#0b0e0c] text-white" : "bg-white text-[#0b0e0c]")}>
+    <main className={cn("min-h-screen", theme === "dark" ? "bg-[#0b0e0c] text-white" : "bg-white text-[#0b0e0c]")}> 
       <Header theme={theme} />
       <Hero theme={theme} />
       <SectionContainer>
         <TrustBar />
         <FeatureAndVideo theme={theme} />
+      </SectionContainer>
+      <SectionContainer>
+        <ImageSlider theme={theme} />
       </SectionContainer>
       <PricingComparison theme={theme} />
       <StoryBlock theme={theme} />
@@ -43,6 +46,67 @@ export default function ResumeAnalyzerPage() {
       <SiteFooter theme={theme} />
     </main>
   )
+// Simple image slider for product showcase
+function ImageSlider({ theme }: { theme: "dark" | "light" }) {
+  const images = [
+    { src: "/va1.png", alt: "Dashboard view" },
+    { src: "/va2.png", alt: "Job description generator" },
+    { src: "/va3.png", alt: "Resume matching" },
+    { src: "/va4.png", alt: "Candidate scoring" },
+    { src: "/va5.png", alt: "Candidate scoring" },
+    { src: "/va6.png", alt: "Candidate scoring" },
+    { src: "/va7.png", alt: "Candidate scoring" },
+  ]
+  const [index, setIndex] = useState(0)
+  const prev = () => setIndex((i) => (i === 0 ? images.length - 1 : i - 1))
+  const next = () => setIndex((i) => (i === images.length - 1 ? 0 : i + 1))
+  return (
+    <div
+      className={cn(
+        "relative w-full flex flex-col items-center",
+        theme === "dark" ? "bg-white/5 ring-white/10" : "bg-black/5 ring-black/10",
+        "rounded-xl ring-1 py-4 px-2 md:py-6 md:px-4 mb-8"
+      )}
+      style={{ maxWidth: '1200px', marginLeft: 'auto', marginRight: 'auto' }}
+    >
+  <div className="relative w-full mx-auto flex items-center justify-center" style={{ height: '500px', maxWidth: '1100px' }}>
+        <button
+          aria-label="Previous image"
+          onClick={prev}
+          className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full p-2 z-10"
+        >
+          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M15 19l-7-7 7-7"/></svg>
+        </button>
+        <img
+          src={images[index].src}
+          alt={images[index].alt}
+          className="w-full h-full object-contain rounded-lg shadow-lg transition-all duration-300 bg-white dark:bg-black"
+          style={{ objectFit: "contain", height: '100%', maxHeight: '700px', background: 'inherit' }}
+        />
+        <button
+          aria-label="Next image"
+          onClick={next}
+          className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/40 hover:bg-black/70 text-white rounded-full p-2 z-10"
+        >
+          <svg width="24" height="24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M9 5l7 7-7 7"/></svg>
+        </button>
+      </div>
+      <div className="flex gap-2 mt-4">
+        {images.map((img, i) => (
+          <button
+            key={img.src}
+            className={cn(
+              "w-3 h-3 rounded-full",
+              i === index ? "bg-yellow-400" : "bg-gray-400/40"
+            )}
+            aria-label={`Go to image ${i + 1}`}
+            onClick={() => setIndex(i)}
+          />
+        ))}
+      </div>
+    </div>
+  )
+}
 }
 
 function Header({ theme }: { theme: "dark" | "light" }) {
