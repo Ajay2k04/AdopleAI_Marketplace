@@ -114,7 +114,7 @@ function Hero({ theme }: { theme: "dark" | "light" }) {
         <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/I7f6_szcHJk?si=AHz4T5eQkMoP7T5s"
             title="SEC Analysis overview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

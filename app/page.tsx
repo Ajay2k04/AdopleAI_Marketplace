@@ -148,7 +148,7 @@ export default function AppSumoHomepage() {
               <CardHeader className="p-0">
                 <Link href="/products/grigora" className="block">
                   <img
-                    src="/web-builder-interface-purple-gradient.png"
+                    src="/image2.png"
                     alt="Adople Voice Agent"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
@@ -190,7 +190,7 @@ export default function AppSumoHomepage() {
               <CardHeader className="p-0">
                 <Link href="/products/jodian" className="block">
                   <img
-                    src="/ai-platform-interface-blue-gradient.png"
+                    src="/image4.png"
                     alt="Jodian"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
