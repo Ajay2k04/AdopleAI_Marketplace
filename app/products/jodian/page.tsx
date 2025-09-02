@@ -9,11 +9,13 @@
 
 "use client"
 
+
 import { useEffect, useState } from "react"
 import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation"
 import { addToCart, type CartTier } from "@/app/lib/cart"
+import ImageSlider from "@/components/ui/ImageSlider"
 
 const THEME_KEY = "theme"
 
@@ -27,12 +29,21 @@ export default function SECAnalysisPage() {
   }, [])
 
   return (
-    <main className={cn("min-h-screen", theme === "dark" ? "bg-[#0b0e0c] text-white" : "bg-white text-[#0b0e0c]")}>
+    <main className={cn("min-h-screen", theme === "dark" ? "bg-[#0b0e0c] text-white" : "bg-white text-[#0b0e0c]")}> 
       <Header theme={theme} />
       <Hero theme={theme} />
       <SectionContainer>
         <TrustBar />
         <FeatureAndVideo theme={theme} />
+        <ImageSlider
+          theme={theme}
+          images={[
+            { src: "/f4.png", alt: "" },
+            { src: "/f3.png", alt: "" },
+            { src: "/f2.png", alt: "" },
+            { src: "/f1.png", alt: "" },
+          ]}
+        />
       </SectionContainer>
       <PricingComparison theme={theme} />
       <StoryBlock theme={theme} />

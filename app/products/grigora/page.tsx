@@ -5,6 +5,7 @@ import Link from "next/link"
 import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation"
 import { addToCart, type CartTier } from "@/app/lib/cart"
+import ImageSlider from "@/components/ui/ImageSlider"
 
 const THEME_KEY = "theme"
 
@@ -24,6 +25,18 @@ export default function AIVoiceAssistantsPage() {
       <SectionContainer>
         <TrustBar />
         <FeatureAndVideo theme={theme} />
+        <ImageSlider
+          theme={theme}
+          images={[
+            { src: "/va1.png", alt: "" },
+            { src: "/va2.png", alt: "" },
+            { src: "/va3.png", alt: "" },
+            { src: "/va4.png", alt: "" },
+            { src: "/va5.png", alt: "" },
+            { src: "/va6.png", alt: "" },
+            { src: "/va7.png", alt: "" },
+          ]}
+        />
       </SectionContainer>
       <PricingComparison theme={theme} />
       <StoryBlock theme={theme} />
@@ -34,6 +47,7 @@ export default function AIVoiceAssistantsPage() {
       <SiteFooter theme={theme} />
     </main>
   )
+
 }
 
 function Header({ theme }: { theme: "dark" | "light" }) {
@@ -105,7 +119,7 @@ function Hero({ theme }: { theme: "dark" | "light" }) {
         <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            src="https://www.youtube.com/embed/T-5fJvg5-EA?si=IWQi8NNiEbDKezed"
             title="AI Voice Assistants overview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"

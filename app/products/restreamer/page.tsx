@@ -15,6 +15,7 @@ import { cn } from "@/lib/utils"
 import { useRouter } from "next/navigation"
 import { addToCart, type CartTier } from "@/app/lib/cart"
 
+
 const THEME_KEY = "theme"
 
 export default function ResumeAnalyzerPage() {
@@ -49,13 +50,13 @@ export default function ResumeAnalyzerPage() {
 // Simple image slider for product showcase
 function ImageSlider({ theme }: { theme: "dark" | "light" }) {
   const images = [
-    { src: "/va1.png", alt: "Dashboard view" },
-    { src: "/va2.png", alt: "Job description generator" },
-    { src: "/va3.png", alt: "Resume matching" },
-    { src: "/va4.png", alt: "Candidate scoring" },
-    { src: "/va5.png", alt: "Candidate scoring" },
-    { src: "/va6.png", alt: "Candidate scoring" },
-    { src: "/va7.png", alt: "Candidate scoring" },
+    { src: "/pd1.png", alt: "" },
+    { src: "/pd2.png", alt: "" },
+    { src: "/pd3.png", alt: "" },
+    { src: "/pd4.png", alt: "" },
+    { src: "/pd5.png", alt: "" },
+    { src: "/pd6.png", alt: "" },
+    { src: "/pd7.png", alt: "" },
   ]
   const [index, setIndex] = useState(0)
   const prev = () => setIndex((i) => (i === 0 ? images.length - 1 : i - 1))
