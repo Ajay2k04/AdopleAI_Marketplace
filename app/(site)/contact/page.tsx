@@ -19,7 +19,7 @@ export default function ContactPage() {
             </a>
           </li>
           <li>Hours: Mon–Fri, 9:00–17:00 (local time)</li>
-          <li>Address: 9/11, First Floor, Chinniah Pillai Road, Maravaneri...</li>
+          <li>Address: 9/11, First Floor, Chinniah Pillai Road, Maravaneri 2nd Cross, Salem - 636 007. TamilNadu. India.</li>
         </ul>
       </section>
 
