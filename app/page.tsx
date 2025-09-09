@@ -267,13 +267,13 @@ export default function AppSumoHomepage() {
               </CardFooter>
             </Card>
 
-            {/* Product Card 4 - Fluent 3D */}
-            {/* <Card className={`${themeClasses.cardBg} ${themeClasses.cardBorder}`}>
+            {/* Product Card 4 - Document Insights */}
+            <Card className={`${themeClasses.cardBg} ${themeClasses.cardBorder}`}>
               <CardHeader className="p-0">
-                <Link href="/products/fluent-3d" className="block">
+                <Link href="/products/document-insights" className="block">
                   <img
-                    src="/web-design-tool-interface-blue-gradient.png"
-                    alt="Fluent 3D"
+                    src="/image3.png"
+                    alt="Document Insights"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
                 </Link>
@@ -284,30 +284,30 @@ export default function AppSumoHomepage() {
                     ADOPLE AI SELECT
                   </Badge>
                 </div>
-                <CardTitle className={themeClasses.text + " mb-2"}>Fluent 3D</CardTitle>
-                <p className={`text-sm ${themeClasses.textMuted} mb-2`}>Web builders</p>
+                <CardTitle className={themeClasses.text + " mb-2"}>Document Insights</CardTitle>
+                <p className={`text-sm ${themeClasses.textMuted} mb-2`}>Document Analysis</p>
                 <CardDescription className={`${themeClasses.textSecondary} text-sm mb-3`}>
-                  Build websites fast with drag-and-drop components, building blocks, templates, and more!
+                  Advanced AI-powered document analysis tool that extracts key insights, summarizes content, and identifies patterns...
                 </CardDescription>
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                    <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`} />
                   ))}
-                  <span className={`text-sm ${themeClasses.textMuted} ml-1`}>4.7 (89 reviews)</span>
+                  <span className={`text-sm ${themeClasses.textMuted} ml-1`}>4.9 (128 reviews)</span>
                 </div>
               </CardContent>
               <CardFooter className="p-4 pt-0">
                 <div className="w-full">
                   <div className="flex items-baseline gap-2 mb-3">
-                    <span className={`text-2xl font-bold ${themeClasses.text}`}>$49</span>
-                    <span className={`text-sm ${themeClasses.textMuted} line-through`}>$588</span>
+                    <span className={`text-2xl font-bold ${themeClasses.text}`}>$79</span>
+                    <span className={`text-sm ${themeClasses.textMuted} line-through`}>$399</span>
                   </div>
-                  <Link href="/products/fluent-3d" className="block">
+                  <Link href="/products/document-insights" className="block">
                     <Button className="w-full bg-green-500 hover:bg-green-600 text-black">Get lifetime deal</Button>
                   </Link>
                 </div>
               </CardFooter>
-            </Card> */}
+            </Card>
           </div>
         </div>
       </section>
@@ -608,3 +608,5 @@ export default function AppSumoHomepage() {
     </div>
   )
 }
+
+
