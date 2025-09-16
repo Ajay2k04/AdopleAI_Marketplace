@@ -83,7 +83,7 @@ export const products: Product[] = [
     rating: 4.9,
     reviews: 128,
     badge: "ADOPLE AI SELECT",
-    image: "/image3.png",
+    image: "/imgs.png",
     accent: "from-blue-600 to-indigo-600",
     integrations: ["PDF", "Word", "Google Docs"],
     plan: "Lifetime",

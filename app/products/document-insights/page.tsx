@@ -28,12 +28,12 @@ export default function DocumentInsightsPage() {
         <ImageSlider
           theme={theme}
           images={[
-            { src: "/img0.png", alt: "Document Insights Interface" },
-            { src: "/img1.png", alt: "Analysis Dashboard" },
-            { src: "/img2.png", alt: "Insights Report" },
+            { src: "/img1.png", alt: "Document Insights Interface" },
+            { src: "/img2.png", alt: "Analysis Dashboard" },
+            { src: "/img3.png", alt: "Insights Report" },
             { src: "/img4.png", alt: "Data Visualization" },
             { src: "/img5.png", alt: "Export Options" },
-            { src: "/img7.png", alt: "Collaboration Tools" },
+            { src: "/img6.png", alt: "Collaboration Tools" },
           ]}
         />
       </SectionContainer>
@@ -117,7 +117,7 @@ function Hero({ theme }: { theme: "dark" | "light" }) {
         <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20">
           <iframe
             className="w-full h-full"
-            src="https://www.youtube.com/embed/wiCLrv2b5KI?si=qhMwV5APckCqg8pw"
+            src="/Yubi 2min Demo.mp4"
             title="Document Insights overview"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
@@ -241,22 +241,14 @@ function PricingComparison({ theme }: { theme: "dark" | "light" }) {
                 <th key={t.name} className="p-4 text-left">
                   <div className="text-sm">{t.name}</div>
                   <div className="text-2xl font-semibold">${t.price}</div>
-                  <button
-                    onClick={() => {
-                      addToCart({
-                        slug: "document-insights",
-                        name: "Document Insights",
-                        image: "/image3.png",
-                        tier: t.name,
-                        unitPrice: t.price,
-                        quantity: 1,
-                      })
-                      router.push("/cart")
-                    }}
-                    className="mt-2 rounded-full bg-yellow-400 text-black font-semibold px-4 py-1.5"
+                  <a
+                    href="https://updatedyubi.adople.ai/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-2 rounded-full bg-yellow-400 text-black font-semibold px-4 py-1.5 inline-block text-center hover:bg-yellow-500 transition-colors"
                   >
                     Buy now
-                  </button>
+                  </a>
                   <div className="text-xs mt-1 opacity-70">Lifetime access</div>
                 </th>
               ))}
@@ -476,7 +468,7 @@ function BottomCTA({ theme }: { theme: "dark" | "light" }) {
       <div className="max-w-3xl mx-auto px-4">
         <h3 className="text-xl md:text-2xl font-semibold">Transform your documents into actionable insights today</h3>
         <p className="mt-2 text-sm opacity-80">Powered by advanced AI, just upload and analyze.</p>
-        <a href="#pricing" className="inline-block mt-5 rounded-full bg-yellow-400 text-black font-semibold px-6 py-2 hover:bg-yellow-500 transition-colors">
+        <a href="https://updatedyubi.adople.ai/" target="_blank" rel="noopener noreferrer" className="inline-block mt-5 rounded-full bg-yellow-400 text-black font-semibold px-6 py-2 hover:bg-yellow-500 transition-colors">
           Get Document Insights now
         </a>
       </div>

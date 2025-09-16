@@ -272,7 +272,7 @@ export default function AppSumoHomepage() {
               <CardHeader className="p-0">
                 <Link href="/products/document-insights" className="block">
                   <img
-                    src="/image3.png"
+                    src="/imgs.png"
                     alt="Document Insights"
                     className="w-full h-48 object-cover rounded-t-lg"
                   />
@@ -287,7 +287,7 @@ export default function AppSumoHomepage() {
                 <CardTitle className={themeClasses.text + " mb-2"}>Document Insights</CardTitle>
                 <p className={`text-sm ${themeClasses.textMuted} mb-2`}>Document Analysis</p>
                 <CardDescription className={`${themeClasses.textSecondary} text-sm mb-3`}>
-                  Advanced AI-powered document analysis tool that extracts key insights, summarizes content, and identifies patterns...
+                Advanced AI-powered document analysis tool that extracts key insights, summarizes content, and identifies.
                 </CardDescription>
                 <div className="flex items-center gap-1 mb-3">
                   {[...Array(5)].map((_, i) => (
