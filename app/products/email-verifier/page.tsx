@@ -114,11 +114,21 @@ function Hero({ theme }: { theme: "dark" | "light" }) {
             </Link>
           </div>
         </div>
-        <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20">
-          <iframe
-            src="/emai.png"
-            className="w-full h-full object-cover"
-          />
+        <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20 bg-gradient-to-br from-gray-800 to-gray-900 flex items-center justify-center">
+          <div className="text-center text-white">
+            <div className="text-4xl mb-4">📧</div>
+            <h3 className="text-2xl font-semibold mb-2">Coming Soon</h3>
+            <p className="text-sm opacity-90">Video demonstration will be available soon</p>
+            {/* Future video iframe will go here:
+            <iframe
+              src="YOUR_VIDEO_URL_HERE"
+              className="w-full h-full"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture"
+              title="Email Verifier Demo"
+            />
+            */}
+          </div>
         </div>
       </div>
     </section>
