@@ -308,6 +308,90 @@ export default function AppSumoHomepage() {
                 </div>
               </CardFooter>
             </Card>
+
+            {/* Product Card 5 - Email Verifier */}
+            <Card className={`${themeClasses.cardBg} ${themeClasses.cardBorder}`}>
+              <CardHeader className="p-0">
+                <Link href="/products/email-verifier" className="block">
+                  <img
+                    src="/email-img.png"
+                    alt="Email Verifier"
+                    className="w-full h-48 object-cover rounded-t-lg"
+                  />
+                </Link>
+              </CardHeader>
+              <CardContent className="p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <Badge variant="secondary" className="bg-green-600 text-white">
+                    ADOPLE AI SELECT
+                  </Badge>
+                </div>
+                <CardTitle className={themeClasses.text + " mb-2"}>Email Verifier</CardTitle>
+                <p className={`text-sm ${themeClasses.textMuted} mb-2`}>Email Validation</p>
+                <CardDescription className={`${themeClasses.textSecondary} text-sm mb-3`}>
+                  Comprehensive, high-performance email verification system that validates email addresses in real-time using multiple verification techniques...
+                </CardDescription>
+                <div className="flex items-center gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`} />
+                  ))}
+                  <span className={`text-sm ${themeClasses.textMuted} ml-1`}>4.8 (89 reviews)</span>
+                </div>
+              </CardContent>
+              <CardFooter className="p-4 pt-0">
+                <div className="w-full">
+                  <div className="flex items-baseline gap-2 mb-3">
+                    <span className={`text-2xl font-bold ${themeClasses.text}`}>$29</span>
+                    <span className={`text-sm ${themeClasses.textMuted} line-through`}>$599</span>
+                  </div>
+                  <Link href="/products/email-verifier" className="block">
+                    <Button className="w-full bg-green-500 hover:bg-green-600 text-black">Get lifetime deal</Button>
+                  </Link>
+                </div>
+              </CardFooter>
+            </Card>
+
+            {/* Product Card 6 - AI Agents */}
+            <Card className={`${themeClasses.cardBg} ${themeClasses.cardBorder}`}>
+              <CardHeader className="p-0">
+                <Link href="/products/ai-agents" className="block">
+                  <img
+                    src="/agent0.png"
+                    alt="AI Agents"
+                    className="w-full h-48 object-cover rounded-t-lg"
+                  />
+                </Link>
+              </CardHeader>
+              <CardContent className="p-4">
+                <div className="flex items-center gap-2 mb-2">
+                  <Badge variant="secondary" className="bg-green-600 text-white">
+                    ADOPLE AI SELECT
+                  </Badge>
+                </div>
+                <CardTitle className={themeClasses.text + " mb-2"}>AI Agents</CardTitle>
+                <p className={`text-sm ${themeClasses.textMuted} mb-2`}>RAG Platform</p>
+                <CardDescription className={`${themeClasses.textSecondary} text-sm mb-3`}>
+                  Comprehensive Retrieval-Augmented Generation (RAG) platform that combines document management, AI-powered chat, and knowledge base functionality with 40+ connectors...
+                </CardDescription>
+                <div className="flex items-center gap-1 mb-3">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className={`w-4 h-4 ${i < 4 ? "fill-yellow-400 text-yellow-400" : "text-gray-300"}`} />
+                  ))}
+                  <span className={`text-sm ${themeClasses.textMuted} ml-1`}>4.9 (156 reviews)</span>
+                </div>
+              </CardContent>
+              <CardFooter className="p-4 pt-0">
+                <div className="w-full">
+                  <div className="flex items-baseline gap-2 mb-3">
+                    <span className={`text-2xl font-bold ${themeClasses.text}`}>$99</span>
+                    <span className={`text-sm ${themeClasses.textMuted} line-through`}>$999</span>
+                  </div>
+                  <Link href="/products/ai-agents" className="block">
+                    <Button className="w-full bg-green-500 hover:bg-green-600 text-black">Get lifetime deal</Button>
+                  </Link>
+                </div>
+              </CardFooter>
+            </Card>
           </div>
         </div>
       </section>
