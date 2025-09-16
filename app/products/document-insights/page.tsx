@@ -116,12 +116,12 @@ function Hero({ theme }: { theme: "dark" | "light" }) {
         </div>
         <div className="w-full aspect-video rounded-xl overflow-hidden ring-1 ring-white/20">
           <iframe
+            src="https://player.vimeo.com/video/1119015750?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&amp;controls=0&amp;title=0&amp;byline=0&amp;portrait=0&amp;background=1"
             className="w-full h-full"
-            src="/Yubi 2min Demo.mp4"
-            title="Document Insights overview"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            frameBorder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
             referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
+            title="Yubi 2min Demo"
           />
         </div>
       </div>
