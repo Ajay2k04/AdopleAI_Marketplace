@@ -261,7 +261,7 @@ function PricingComparison({ theme }: { theme: "dark" | "light" }) {
                   <div className="text-sm">{t.name}</div>
                   <div className="text-2xl font-semibold">${t.price}</div>
                   <a
-                    href="http://agent.adople.in/"
+                    href="http://agent.adople.ai/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-2 rounded-full bg-yellow-400 text-black font-semibold px-4 py-1.5 inline-block text-center hover:bg-yellow-500 transition-colors"
@@ -490,7 +490,7 @@ function BottomCTA({ theme }: { theme: "dark" | "light" }) {
       <div className="max-w-3xl mx-auto px-4">
         <h3 className="text-xl md:text-2xl font-semibold">Transform your knowledge management today</h3>
         <p className="mt-2 text-sm opacity-80">Powered by advanced RAG technology, just connect and chat.</p>
-        <a href="http://agent.adople.in/" target="_blank" rel="noopener noreferrer" className="inline-block mt-5 rounded-full bg-yellow-400 text-black font-semibold px-6 py-2 hover:bg-yellow-500 transition-colors">
+        <a href="http://agent.adople.ai/" target="_blank" rel="noopener noreferrer" className="inline-block mt-5 rounded-full bg-yellow-400 text-black font-semibold px-6 py-2 hover:bg-yellow-500 transition-colors">
           Get AI Agents now
         </a>
       </div>
